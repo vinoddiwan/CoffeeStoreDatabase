@@ -29,6 +29,18 @@ FOREIGN KEY(customer_id) REFERENCES customers(id)
 );
 
 
+-- Adding column to products table
+ALTER TABLE products
+ADD COLUMN coffee_origin VARCHAR(30);
+
+
+-- Removing column to products table
+ALTER TABLE products
+DROP COLUMN coffee_origin;
+
+
+
+
 
 
 
